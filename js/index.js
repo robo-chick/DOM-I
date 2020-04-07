@@ -123,3 +123,22 @@ heading.src = 'img/header-img.png';
 const middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
+// Updated Styles
+
+// Header
+const h1Color = document.querySelectorAll('h1');
+h1Color.forEach(text => {
+  text.style.color = 'midnightblue';
+});
+
+const btnColor = document.querySelector('button');
+button.style.color = 'midnightblue';
+
+// h4 color
+const h4Color = document.querySelectorAll('h4');
+h4Color.forEach(text => {
+  text.style.color = 'midnightblue';
+});
+
+
+
