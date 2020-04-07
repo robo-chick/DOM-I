@@ -52,6 +52,28 @@ navItem[3].textContent = 'Features';
 navItem[4].textContent = 'About';
 navItem[5].textContent = 'Contact';
 
+// Change nav text color
+
+const navColor = document.querySelectorAll('a');
+navColor.forEach(navItem => {
+  navItem.style.color = 'green';
+});
+
+// New nav items
+
+const home = document.createElement('a');
+const portfolio = document.createElement('a');
+home.textContent = 'Home';
+home.href = 'index.html';
+home.style.color = 'green';
+portfolio.textContent = 'Portfolio';
+portfolio.href = '#';
+portfolio.style.color = 'green';
+
+const newNav = document.querySelector('nav');
+newNav.prepend(home);
+newNav.appendChild(portfolio);
+
 // Header Content
 
 const ctaText = document.querySelector('h1');
