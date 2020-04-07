@@ -77,7 +77,7 @@ newNav.appendChild(portfolio);
 // Header Content
 
 const ctaText = document.querySelector('h1');
-ctaText.textContent = 'DOM Is Awesome!';
+ctaText.innerHTML = 'DOM<br> Is<br> Awesome!';
 
 const button = document.querySelector('button');
 button.textContent = 'Get Started';
