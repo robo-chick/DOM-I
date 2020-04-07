@@ -40,3 +40,64 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Navigation
+
+const navItem = document.querySelectorAll('a');
+
+navItem[0].textContent = 'Services';
+navItem[1].textContent = 'Product';
+navItem[2].textContent = 'Vision';
+navItem[3].textContent = 'Features';
+navItem[4].textContent = 'About';
+navItem[5].textContent = 'Contact';
+
+// Header Content
+
+const ctaText = document.querySelector('h1');
+ctaText.textContent = 'DOM Is Awesome!';
+
+const button = document.querySelector('button');
+button.textContent = 'Get Started';
+
+// Main Content
+
+const content = document.querySelectorAll('h4');
+content[0].textContent = 'Features';
+content[1].textContent = 'About';
+content[2].textContent = 'Services';
+content[3].textContent = 'Product';
+content[4].textContent = 'Vision';
+content[5].textContent = 'Contact';
+
+// Top
+
+const text = document.querySelectorAll('p');
+text[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+text[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+// Bottom 
+
+text[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+text[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+text[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+// Contact
+
+text[5].textContent = '123 Way 456 Street Somewhere, USA';
+text[6].textContent = '1 (888) 888-8888';
+text[7].textContent = 'sales@greatidea.io';
+
+// Footer
+
+text[8].textContent = 'Copyright Great Idea! 2018'
+
+
+// Images
+
+const heading = document.getElementById('cta-img');
+heading.src = 'img/header-img.png';
+
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
