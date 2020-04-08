@@ -106,7 +106,7 @@ text[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tem
 
 // Contact
 
-text[5].textContent = '123 Way 456 Street Somewhere, USA';
+text[5].innerHTML = '123 Way 456 Street<br> Somewhere, USA';
 text[6].textContent = '1 (888) 888-8888';
 text[7].textContent = 'sales@greatidea.io';
 
@@ -139,6 +139,5 @@ const h4Color = document.querySelectorAll('h4');
 h4Color.forEach(text => {
   text.style.color = 'midnightblue';
 });
-
 
 
