@@ -42,15 +42,14 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Navigation
-
 const navItem = document.querySelectorAll('a');
 
-navItem[0].textContent = 'Services';
-navItem[1].textContent = 'Product';
-navItem[2].textContent = 'Vision';
-navItem[3].textContent = 'Features';
-navItem[4].textContent = 'About';
-navItem[5].textContent = 'Contact';
+navItem[0].textContent = siteContent['nav']['nav-item-1'];
+navItem[1].textContent = siteContent['nav']['nav-item-2'];
+navItem[2].textContent = siteContent['nav']['nav-item-3'];
+navItem[3].textContent = siteContent['nav']['nav-item-4'];
+navItem[4].textContent = siteContent['nav']['nav-item-5'];
+navItem[5].textContent = siteContent['nav']['nav-item-6'];
 
 // Change nav text color
 
@@ -80,45 +79,46 @@ const ctaText = document.querySelector('h1');
 ctaText.innerHTML = 'DOM<br> Is<br> Awesome!';
 
 const button = document.querySelector('button');
-button.textContent = 'Get Started';
+button.textContent = siteContent['cta']['button'];
 
 // Main Content
 
 const content = document.querySelectorAll('h4');
-content[0].textContent = 'Features';
-content[1].textContent = 'About';
-content[2].textContent = 'Services';
-content[3].textContent = 'Product';
-content[4].textContent = 'Vision';
-content[5].textContent = 'Contact';
+content[0].textContent = siteContent['main-content']['features-h4'];
+content[1].textContent = siteContent['main-content']['about-h4'];
+content[2].textContent = siteContent['main-content']['services-h4'];
+content[3].textContent = siteContent['main-content']['product-h4'];
+content[4].textContent = siteContent['main-content']['vision-h4'];
+
+content[5].textContent = siteContent['contact']['contact-h4'];
 
 // Top
 
 const text = document.querySelectorAll('p');
-text[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-text[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+text[0].textContent = siteContent['main-content']['features-content'];
+text[1].textContent = siteContent['main-content']['about-content'];
 
 // Bottom 
 
-text[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-text[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-text[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+text[2].textContent = siteContent['main-content']['services-content'];
+text[3].textContent = siteContent['main-content']['product-content'];
+text[4].textContent = siteContent['main-content']['vision-content'];
 
 // Contact
 
 text[5].innerHTML = '123 Way 456 Street<br> Somewhere, USA';
-text[6].textContent = '1 (888) 888-8888';
-text[7].textContent = 'sales@greatidea.io';
+text[6].textContent = siteContent['contact']['phone'];
+text[7].textContent = siteContent['contact']['email'];
 
 // Footer
 
-text[8].textContent = 'Copyright Great Idea! 2018'
+text[8].textContent = siteContent['footer']['copyright'];
 
 
 // Images
 
 const heading = document.getElementById('cta-img');
-heading.src = 'img/header-img.png';
+heading.setAttribute('src', siteContent['cta'] ['img-src']);
 
 const middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
